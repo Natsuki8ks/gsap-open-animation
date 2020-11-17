@@ -1,0 +1,70 @@
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  padding: 0
+  height: 100vh
+  background: #6f27bb
+  display: grid
+  place-content: center
+  font-family: 'Nunito', Arial
+
+button
+  background: #8716f9
+  color: #ffffff
+  border: none
+  padding: .5em 1em
+  border-radius: 2rem
+  font-size: 1.3em
+  font-family: 'Nunito', Arial, sans-serif
+  cursor: pointer
+  font-weight: bold
+
+.overlay
+  // display: none
+  clip-path: circle(0%)
+  position: fixed
+  background: #cccccc
+  width: 100%
+  height: 100%
+  overflow-y: scroll
+  overflow-x: hidden
+  padding: 2em
+  pointer-events: none
+
+.material-icons.times
+  position: absolute
+  right: 2em
+  top: 2em
+
+.menu
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
+
+.menu-container
+  margin-top: 2em
+  opacity: 0
+  transform: translateY(-300px)
+
+  ul
+    list-style-type: none
+    padding: 0
+    li a 
+      text-decoration: none
+      color: black
+      display: block
+      font-size: .9em
+      padding: .8em 2em  
+
+      &:hover
+        background: rgb(240, 236, 240)
+
+.category
+  font-size: 1.2em
+  font-weight: bold
+  color: #6800d6
+  margin-left: .8em
+
+.hide 
+  display: none
